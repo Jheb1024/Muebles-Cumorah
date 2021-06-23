@@ -13,6 +13,14 @@ const routes: Routes = [
     loadChildren:()=>import("./@public/paginas/contacto/contacto.module").then(m=>m.ContactoModule)
   },
   {
+    path: 'admin',
+    loadChildren: ()=>import("./@admin/paginas/panel/panel.module").then(m=>m.PanelModule)
+  },
+  {
+    path:'admin/usuarios',
+    loadChildren:()=>import("./@admin/paginas/usuarios/usuarios.module").then(m=>m.UsuariosModule)
+  },
+  {
     path: '',
     redirectTo:'home',
     pathMatch:'full'
