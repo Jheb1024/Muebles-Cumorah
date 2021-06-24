@@ -4,22 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './@public/paginas/home/home.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: ()=>import("./@public/paginas/home/home.module").then(m=>m.HomeModule)
-  },
-  {
-    path:'contacto',
-    loadChildren:()=>import("./@public/paginas/contacto/contacto.module").then(m=>m.ContactoModule)
-  },
-  {
-    path: 'admin',
-    loadChildren: ()=>import("./@admin/paginas/panel/panel.module").then(m=>m.PanelModule)
-  },
-  {
-    path:'admin/usuarios',
-    loadChildren:()=>import("./@admin/paginas/usuarios/usuarios.module").then(m=>m.UsuariosModule)
-  },
+
+
   {
     path: '',
     redirectTo:'home',
