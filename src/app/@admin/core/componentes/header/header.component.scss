@@ -1,0 +1,12 @@
+@import "./../../../paginas/admin.component.scss";
+button#sidebarToggle {
+  color: $admin-primary-color;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: x-large;
+}
+.shadow[_ngcontent-qrq-c16] {
+  box-shadow: 0px 9px 12px -7px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 0px 9px 12px -7px rgba(0,0,0,0.63);
+  -moz-box-shadow: 0px 9px 12px -7px rgba(0,0,0,0.63);
+}
